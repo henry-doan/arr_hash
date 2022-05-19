@@ -168,3 +168,105 @@
 # Hashes - key value pairs, rep object, noun 
   # object - hashes 
   # { }
+  # Hash.new 
+  # { }
+  # old 
+  # { 1 => "one", 2 => "two" } 
+  # { "first_name": 'bob', "age": 1 }
+
+  #new 
+  # @person = { first_name: 'bob', last_name: 'jones', age: 33 }
+  # p @person
+
+# @person = { first_name: 'bob', last_name: 'jones', age: 33 }
+# @person2 = { first_name: 'jill', last_name: 'smith', age: 12 }
+# p @person[:last_name]
+# p @person[:age]
+# p @person[:beard]
+
+# @person[:beard] = false 
+
+# p @person 
+
+# @person[:age] = 34 
+
+# p @person 
+
+# puts "Welcome #{@person[:first_name]} #{@person[:last_name]}"
+
+# @people = [
+#   { first_name: 'bob', last_name: 'jones'},
+#   { first_name: 'jill', last_name: 'smith'},
+#   { first_name: 'jack', last_name: 'bobby'}
+# ]
+
+# p @people[0][:first_name]
+# p @people[:first_name][0] -> error
+# p @people[1][:first_name] -> jill 
+# outside in, treat as an array, hash grab key
+
+# languages = { 
+#   language: {
+#    ruby: { 
+#      conceived: 1993,
+#      awesomeness: 9000
+#    },
+#    java: {
+#      conceived: 1991,
+#      awesomeness: false
+#    }
+#   }
+# }
+
+# p languages[:language][:ruby][:awesomeness]
+# p languages[:language][:ruby][:awesomeness] = 10000
+
+# methods
+# @person = { first_name: 'bob', last_name: 'jones', age: 33 }
+# @person.keys # show all keys 
+# @person.delete(:age) # delete key value pair 
+# @person.clear 
+# @person.has_key? :age # if it has a key or not 
+
+# @person = { first_name: 'bob', last_name: 'jones', age: 33 }
+
+# @person.each do |key, value|
+# # @person.each do |pizza, taco|
+#   puts "#{key}: #{value}"
+# end
+
+# ruby gems - package, library - tools you can use in your program  
+# download ruby, gem bundler 
+# Gemfile - source, where it is getting the gems from , 
+# what gems you want in your project, versions
+
+# bundle init in the terminal 
+# add the gems in the gem file 
+# run a bundle or bundle install
+# gem.lock - info, recipet
+# pry gem - debugging tool 
+# irb session of our code of where we want to take 
+# a look at things.
+
+# irb - embedded ruby, built in ruby editor, testing, looking at stuff
+# irb 
+# exit to exit 
+
+# any time we change the gem file, 
+# run bundle 
+# binding.pry, stop and let you look at variables and value
+# if you see a * that mean you need to end something like a qoute or a bracket 
+# to exit type exit 
+# remove binding.pry after 
+# require 'pry'
+
+
+# @name = 'bob'
+
+# def print_name 
+#   # binding.pry
+#   # puts name 
+#   puts @name 
+# end
+
+# print_name
